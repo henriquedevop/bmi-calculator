@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    <main class="wrapper">
+        <div class="container">
+            <h1>Calculadora de IMC</h1>
+        </div>
+        <div class="progress-bar">
+            <div class="circular-progress">
+                <span class="progress-value">0%</span>
+            </div>
+            <span class="text">Valor IMC</span>
+        </div>
+        <div class="bmi-infos">
+            <ul>
+                <li>índice de IMC saudável:</li>
+            </ul>
+        </div>
+        <div class="input-wrapper">
+            <div class="gender-radio">
+                <div class="input-container">
+                    <input type="radio" name="radio" id="male">
+                    <div class="radio-title">
+                        <label for="male"></label>
+                    </div>
+                </div>
+
+                <div class="gender-radio">
+                    <input type="radio" name="radio" id="female">
+                    <div class="radio-title">
+                        <img src="./images/woman.png" alt="">
+                        <label for="female"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="input-digit">
+                <input type="number" id="age" placeholder="22">
+            </div>
+            <div class="input-digit">
+                <input type="number" id="height" placeholder="165">
+            </div>
+            <div class="input-digit">
+                <input type="number" id="weight" placeholder="55">
+            </div>
+        </div>
+    </main>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
