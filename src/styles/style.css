@@ -7,4 +7,192 @@
 :root {
     --background-color: #2F2E3E;
     --text-color: #FDFCFE;
+    --contrast-bg: #45465B;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--text-color);
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--background-color);   
+}
+
+.title h1 {
+    text-align: center;
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.circular-progress {
+    position: relative;
+    height: 170px;
+    width: 170px;
+    background: conic-gradient(#9166fd   123.6deg, #2F2E3E 0deg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.circular-progress::before {
+    content: '';
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: var(--contrast-bg);
+}
+
+.progress-value {
+    position: relative;
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.text {
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.bmi-infos {
+    background-color: #393848;
+    border-radius: 8px;
+    padding-block: 1rem;
+    margin-bottom: 2rem;
+}
+
+.bmi-infos ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bmi-infos ul li {
+    width: 100%;
+    max-width: 280px;
+}
+
+.gender-radio img {
+    width: 32px;
+    height: 32px;
+}
+
+.gender-radio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.gender-radio p {
+    flex: 1;
+}
+
+.input-container {
+    position: relative;
+    margin-inline: .8rem;
+}
+
+.input-container input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.input-container .radio-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--contrast-bg);
+    border-radius: 8px;
+}
+
+input:checked + .radio-title {
+    border: 2px solid #9166fd;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-digit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-digit {
+    margin-bottom: 1em;
+}
+
+.input-digit input {
+    border: 2px solid #9166fd;
+    border-radius: 8px;
+    height: 45px;
+    text-align: end;
+    padding-right: 1em;
+    background: transparent;
+    width: 100%;
+    max-width: 250px;
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.input-digit input:focus {
+    outline: none;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.btn-calc {
+    border: none;
+    background-color: #8169F1;
+    color: var(--text-color);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: rgba(58, 57, 72, 1) 0px 0px 0px 7px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-clear {
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    background-color: #45465B;
+    padding: 1rem;
+    border-radius: 8px;
+    color: var(--text-color);
+    box-shadow: rgba(58, 57, 72, 1) 0px 0px 0px 7px;
 }
