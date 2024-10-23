@@ -214,3 +214,66 @@ input[type="number"]::-webkit-inner-spin-button {
     color: var(--main-color);
     font-weight: 600;
 }
+
+@media (max-width: 360px) {
+    .title h1 {
+        font-size: 1.7rem;
+    }
+    .circular-progress {
+        height: 150px;
+        width: 150px;
+    }
+    
+    .circular-progress::before {
+        height: 130px;
+        width: 130px;
+    }
+    
+    .progress-value {
+        font-size: 25px;
+    }
+
+    .bmi-infos ul {
+        list-style: none;
+        text-align: center;
+        margin-inline: 1rem;
+    }
+
+    .input-digit input {
+        max-width: 200px;
+    }
+}
+
+@media (min-width: 768px) {
+    .bmi-infos ul li {
+        font-size: 1.2rem;
+        max-width: 100%;
+        padding-left: 1rem;
+        list-style: none;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .input-digit p, .gender-radio p {
+        font-size: 1.2rem;
+    }
+    
+    .input-digit input {
+        height: 50px;
+        text-align: left;
+        padding-left: 1rem;
+        max-width: 400px;
+    }
+
+    .wrapper {
+        padding-inline: 10rem;
+    }
+
+}
+
+@media (min-width: 1440px) {
+    .wrapper {
+        padding-inline: 40rem;
+    }
+}
