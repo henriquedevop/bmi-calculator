@@ -8,6 +8,7 @@
     --background-color: #2F2E3E;
     --text-color: #FDFCFE;
     --contrast-bg: #45465B;
+    --main-color: #9166fd;
 }
 
 body {
@@ -43,7 +44,7 @@ body {
     position: relative;
     height: 170px;
     width: 170px;
-    background: conic-gradient(#9166fd   180deg, #2F2E3E 0deg);
+    background: conic-gradient(var(--main-color)   180deg, #2F2E3E 0deg);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -140,7 +141,7 @@ body {
 }
 
 input:checked + .radio-title {
-    border: 3px solid #9166fd;
+    border: 3px solid var(--main-color);
 }
 
 input[type="number"]::-webkit-outer-spin-button,
@@ -160,7 +161,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .input-digit input {
-    border: 2px solid #9166fd;
+    border: 2px solid var(--main-color);
     border-radius: 8px;
     height: 45px;
     text-align: end;
@@ -187,7 +188,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .btn-calc {
     border: none;
-    background-color: #8169F1;
+    background-color: var(--main-color);
     color: var(--text-color);
     padding: 1rem;
     border-radius: 8px;
@@ -202,7 +203,7 @@ input[type="number"]::-webkit-inner-spin-button {
     font-size: 15px;
     font-weight: bold;
     border: none;
-    background-color: #45465B;
+    background-color: var(--contrast-bg);
     padding: 1rem;
     border-radius: 8px;
     color: var(--text-color);
@@ -210,6 +211,6 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .error-message {
-    color: #9368ED;
+    color: var(--main-color);
     font-weight: 600;
 }
