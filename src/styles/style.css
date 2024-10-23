@@ -129,7 +129,7 @@ body {
 }
 
 input:checked + .radio-title {
-    border: 2px solid #9166fd;
+    border: 3px solid #9166fd;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
