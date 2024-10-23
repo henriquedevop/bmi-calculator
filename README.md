@@ -2,7 +2,7 @@
 
 Uma calculadora de IMC (Índice de Massa Corporal) interativa, com visualização gráfica e responsiva.
 
-![Imagem da calculadora](./images/previewBMIcalc.png)
+![Imagem da calculadora](/src/images/previewBMIcalc.png)
 
 ## Sobre o projeto
 
