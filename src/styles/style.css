@@ -274,6 +274,12 @@ input[type="number"]::-webkit-inner-spin-button {
 
 @media (min-width: 1440px) {
     .wrapper {
+        padding-inline: 20rem;
+    }
+}
+
+@media (min-width: 1920px) {
+    .wrapper {
         padding-inline: 40rem;
     }
 }
